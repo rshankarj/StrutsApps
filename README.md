@@ -39,3 +39,17 @@ Setting up the servlet mapping in `web.xml` (using extension mapping):
     </servlet-mapping>
 
 See [The Web Application Deployment Descriptor](http://struts.apache.org/release/1.3.x/userGuide/configuration.html#dd_config) chapter of the Struts User Guide for more information.
+
+## Creating an Action
+
+An action is known as a controller in Rails, and as a view in Django. It handles some extra logic and directs the user to a certain page.
+
+When creating an action you will need to sub-class from the `Action` class (its package is `org.apache.struts.action`) and override the `execute` method:
+
+
+    public class MyAction extends Action {
+        public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+            // logic goes here, forward to a particular page as a result
+        }
+
+See [Action Classes](http://struts.apache.org/release/1.3.x/userGuide/building_controller.html#action_classes) in the Struts User Guide.
