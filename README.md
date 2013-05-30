@@ -53,3 +53,9 @@ When creating an action you will need to sub-class from the `Action` class (its 
         }
 
 See [Action Classes](http://struts.apache.org/release/1.3.x/userGuide/building_controller.html#action_classes) in the Struts User Guide.
+
+You also need to define the action in `struts-config.xml`:
+
+    <action-mappings>
+        <action path="/MyAction" type="app.MyAction" scope="request" name="myaction" />
+    </action-mappings>
