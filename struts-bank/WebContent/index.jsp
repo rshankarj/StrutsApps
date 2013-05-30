@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>Struts bank is best bank!</h1>
-<p>Are you a customer? <a href="/login.jsp">Click here to login</a></p>
+<p>Are you a customer? <a href="login.jsp">Click here to login</a></p>
 </body>
 </html>
