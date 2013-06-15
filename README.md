@@ -11,6 +11,8 @@ References:
 * [Struts 1.3 DTDDoc](http://struts.apache.org/release/1.3.x/struts-core/dtddoc/index.html), displays the schema of the `struts-config.xml` file
 * [Struts 1.3 Javadoc](http://struts.apache.org/release/1.3.x/apidocs/index.html), the struts API docs
 
+The front-end uses [Bootstrap](http://twitter.github.io/bootstrap/).
+
 ## Configuring Struts and Struts URL Routing
 
 In other web frameworks such as Rails and Django you have something called url routing or url patterns. The framework handles the mapping of URLs to controllers. In Struts you have to setup a servlet and then a servlet mapping to handle all URLs that end in `*.do`.
@@ -59,3 +61,14 @@ You also need to define the action in `struts-config.xml`:
     <action-mappings>
         <action path="/MyAction" type="app.MyAction" scope="request" name="myaction" />
     </action-mappings>
+
+## JSTL (JavaServerPages Standard Tag Library)
+
+This project comes with the latest version of [JSTL](https://jstl.java.net/) which gives you a lot of convenient tag methods to use in the code.
+
+Download:
+
+* [http://search.maven.org/#browse|707331597](JSTL API 1.2.1)
+* [http://search.maven.org/#browse|-1002239620](JSTL 1.2.1)
+
+[Stackoverflow has a nice wiki page on the JSTL (including install instructions)](http://stackoverflow.com/tags/jstl/info)
