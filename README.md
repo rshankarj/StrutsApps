@@ -62,6 +62,8 @@ You also need to define the action in `struts-config.xml`:
         <action path="/MyAction" type="app.MyAction" scope="request" name="myaction" />
     </action-mappings>
 
+Each action mapping maps a name to a page or action to display. For example, in the login page, we have the success and errors mappings defined. When logging is in successful, the LoginAction forward to the `success` mapping. If it fails, it redirects to the `errors` mapping which is the `login.jsp` page.
+
 ## JSTL (JavaServerPages Standard Tag Library)
 
 This project comes with the latest version of [JSTL](https://jstl.java.net/) which gives you a lot of convenient tag methods to use in the code.
