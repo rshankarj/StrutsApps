@@ -10,6 +10,7 @@
 	<link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 
+
 <body>
 	<h1>Struts bank is best bank!</h1>
 	<form class="form-horizontal" method="post" action="Login.do">
