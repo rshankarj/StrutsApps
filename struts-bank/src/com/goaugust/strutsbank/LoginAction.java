@@ -19,6 +19,7 @@ public class LoginAction extends Action {
         
         String extraElement1;
         String extraElement2;
+        String extraElement3;
         if (!username.equals("demo") || !password.equals("demo")) {
             return mapping.findForward("errors");
         }
