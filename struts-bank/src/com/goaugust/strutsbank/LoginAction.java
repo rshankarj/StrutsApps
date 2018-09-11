@@ -16,6 +16,9 @@ public class LoginAction extends Action {
             throws Exception {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+        
+        String extraElement1;
+        String extraElement2;
         if (!username.equals("demo") || !password.equals("demo")) {
             return mapping.findForward("errors");
         }
